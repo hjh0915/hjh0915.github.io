@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.46" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>xubuntu安装环境（一） &middot; CS学习</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/hyde.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="CS学习" />
+
+  
+</head>
+
+  <body class=" ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://hjh0915.github.io"><h1>CS学习</h1></a>
+      <p class="lead">
+      学习CS，需要记录点滴。从这里出发，向着诗和远方...
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="http://hjh0915.github.io">首页</a> </li>
+      <li><a href="http://hjh0915.github.io/posts">linux入门</a> </li>
+
+      
+    </ul>
+
+    <p>&copy; 2018. 我的脚印. </p>
+  </div>
+</div>
+
+    <div class="content container">
+    <div class="post">
+  <h1>xubuntu安装环境（一）</h1>
+  <span class="post-date">2018/08/09</span>
+  <p>简单记录xubuntu的安装注意事项及中文环境配置
+</p>
+
+<p>ubuntu作为linux的一个重要版本，它本身又分出了众多版本:</p>
+
+<ul>
+<li>xubuntu</li>
+<li>ubuntu-mate</li>
+<li>Lubuntu</li>
+<li>Kubuntu</li>
+</ul>
+
+<p>我选用了xubuntu，因为它用到XFCE窗口管理器，小巧快速，在低配置的电脑上也可流畅运行。</p>
+
+<h3 id="xubuntu-18-04-1安装">xubuntu 18.04.1安装</h3>
+
+<ol>
+<li>将制作好的xubuntu启动u盘插入，开机，进入bios画面，设置boot（启动优先级），设置成第一个 uefi （启动的类型）</li>
+<li>能从u盘启动后，选择第二项，install xubuntu</li>
+<li>然后正式进入安装 xubuntu linux 的程序
+
+<ul>
+<li>语言选择</li>
+<li>网络不要设定，断网环境下安装，这样直接安装u盘上的软件包，速度快</li>
+<li>时区</li>
+<li>分区设定，初学先简化，清除整个硬盘并安装xubuntu，（若是有windows的话，不想删除，则不能选此项安装，需选择手动分区）</li>
+<li>用户名设定（具有sudo权限）</li>
+</ul></li>
+<li>开始安装，一直等待到安装完成</li>
+</ol>
+
+<h3 id="xubuntu环境设定">xubuntu环境设定</h3>
+
+<ol>
+<li>找到 “软件和更新” 菜单，选择下载服务器，中国服务器，选择“清华”的镜像站点</li>
+<li>语言支持，中文语言包不完整，提示安装</li>
+<li>安装完成中文语言包之后，注销后重新登录，设定输入法fcitx，注销后登录即可生效</li>
+<li>安装新立得系统软件包 sudo apt install synaptic (apt与apt-get一样）</li>
+<li>用新立得来安装git（分布式源码版本管理）, chromnium（谷歌浏览器的开源版本）</li>
+</ol>
+</div>
+
+
+    </div>
+
+  </body>
+</html>

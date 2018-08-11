@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.46" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>xubuntu安装环境（三） &middot; CS学习</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://hjh0915.github.io/css/hyde.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="CS学习" />
+
+  
+</head>
+
+  <body class=" ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://hjh0915.github.io"><h1>CS学习</h1></a>
+      <p class="lead">
+      学习CS，需要记录点滴。从这里出发，向着诗和远方...
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="http://hjh0915.github.io">首页</a> </li>
+      <li><a href="http://hjh0915.github.io/posts">linux入门</a> </li>
+
+      
+    </ul>
+
+    <p>&copy; 2018. 我的脚印. </p>
+  </div>
+</div>
+
+    <div class="content container">
+    <div class="post">
+  <h1>xubuntu安装环境（三）</h1>
+  <span class="post-date">2018/08/09</span>
+  <p>python 2.x 和 python 3.6.6 混合使用的方式
+</p>
+
+<h3 id="pyenv-安装">pyenv 安装</h3>
+
+<p>多版本python的管理器，<a href="https://github.com/pyenv/pyenv">pyenv</a>
+用pyenv来安装python 3.6.6环境</p>
+
+<ol>
+<li><p>先安装必备的一些xubuntu系统包
+具体参见：<a href="https://github.com/pyenv/pyenv/wiki/Common-build-problems">网址链接</a></p>
+
+<pre><code>sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev
+</code></pre></li>
+
+<li><p>采用pyenv-installer安装
+具体参见：<a href="https://github.com/pyenv/pyenv-installer">网址链接</a></p>
+
+<p>在shell下，先运行</p>
+
+<pre><code>export http_proxy=http://localhost:8118 
+export https_proxy=http://localhost:8118
+</code></pre>
+
+<p>就可以利用之前的privoxy+shadowsocks建立起来的代理通道</p>
+
+<p><strong>再运行</strong></p>
+
+<pre><code>curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+</code></pre></li>
+
+<li><p>配置 .bashrc
+增加如下配置:</p>
+
+<pre><code>export PATH=&quot;~/.pyenv/bin:$PATH&quot;
+eval &quot;$(pyenv init -)&quot; \\
+eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre>
+
+<p>然后 <strong>source .bashrc</strong> 生效刚才的配置</p></li>
+
+<li><p>用pyenv安装python 3.6.6</p>
+
+<ul>
+<li>先确保pyenv能否正常运行</li>
+<li>然后同样利用privoxy+shadowsocks的代理通道，运行 pyenv install -v 3.6.6</li>
+<li>等待python 3.6.6下载、编译、安装等一系列过程结束</li>
+</ul></li>
+
+<li><p>正式建立自己的python 3.6.6环境</p>
+
+<pre><code>mkdir myenv
+cd myenv
+pyenv local 3.6.6
+</code></pre>
+
+<p>在myenv目录及其子目录下，python版本切换到3.6.6，不在myenv目录的其他目录则仍然是python 2.7</p></li>
+</ol>
+</div>
+
+
+    </div>
+
+  </body>
+</html>
