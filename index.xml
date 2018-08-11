@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CS学习</title>
-    <link>http://hjh0915.github.io/</link>
+    <link>https://hjh0915.github.io/</link>
     <description>Recent content on CS学习</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 11 Aug 2018 16:31:23 +0800</lastBuildDate>
     
-	<atom:link href="http://hjh0915.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hjh0915.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>学习心得</title>
-      <link>http://hjh0915.github.io/posts/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BF%83%E5%BE%97/</link>
+      <link>https://hjh0915.github.io/posts/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BF%83%E5%BE%97/</link>
       <pubDate>Sat, 11 Aug 2018 16:31:23 +0800</pubDate>
       
-      <guid>http://hjh0915.github.io/posts/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BF%83%E5%BE%97/</guid>
+      <guid>https://hjh0915.github.io/posts/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BF%83%E5%BE%97/</guid>
       <description>&lt;p&gt;想到就写一点
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>xubuntu安装环境（四）</title>
-      <link>http://hjh0915.github.io/posts/xubuntu-install-04/</link>
+      <link>https://hjh0915.github.io/posts/xubuntu-install-04/</link>
       <pubDate>Fri, 10 Aug 2018 19:31:23 +0800</pubDate>
       
-      <guid>http://hjh0915.github.io/posts/xubuntu-install-04/</guid>
+      <guid>https://hjh0915.github.io/posts/xubuntu-install-04/</guid>
       <description>&lt;p&gt;python开发用的编辑器，可以用vim, gedit, sublime text等等，我选visual studio code。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>xubuntu安装环境（三）</title>
-      <link>http://hjh0915.github.io/posts/xubuntu-install-03/</link>
+      <link>https://hjh0915.github.io/posts/xubuntu-install-03/</link>
       <pubDate>Thu, 09 Aug 2018 22:51:23 +0800</pubDate>
       
-      <guid>http://hjh0915.github.io/posts/xubuntu-install-03/</guid>
+      <guid>https://hjh0915.github.io/posts/xubuntu-install-03/</guid>
       <description>&lt;p&gt;python 2.x 和 python 3.6.6 混合使用的方式
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>xubuntu安装环境（二）</title>
-      <link>http://hjh0915.github.io/posts/xubuntu-install-02/</link>
+      <link>https://hjh0915.github.io/posts/xubuntu-install-02/</link>
       <pubDate>Thu, 09 Aug 2018 21:51:23 +0800</pubDate>
       
-      <guid>http://hjh0915.github.io/posts/xubuntu-install-02/</guid>
+      <guid>https://hjh0915.github.io/posts/xubuntu-install-02/</guid>
       <description>&lt;p&gt;访问github等技术型网站时需要走代理加速
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>xubuntu安装环境（一）</title>
-      <link>http://hjh0915.github.io/posts/xubuntu-install-01/</link>
+      <link>https://hjh0915.github.io/posts/xubuntu-install-01/</link>
       <pubDate>Thu, 09 Aug 2018 20:51:23 +0800</pubDate>
       
-      <guid>http://hjh0915.github.io/posts/xubuntu-install-01/</guid>
+      <guid>https://hjh0915.github.io/posts/xubuntu-install-01/</guid>
       <description>&lt;p&gt;简单记录xubuntu的安装注意事项及中文环境配置
 &lt;/p&gt;</description>
     </item>
